@@ -28,6 +28,7 @@ public class ConvertVocal2Angka {
         }
          return kalimat;   
         }
+             
 }
     
 
