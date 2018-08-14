@@ -35,7 +35,26 @@ public class ConvertVocal2Angka {
         
         for (int i = 0; i < arrCon.length; i++) {
             System.out.println(arrKal[i] + " => " + arrCon[i]);
-        }
+              }
+    }
+    private static void tampilHasil(String convert)
+    {
+        System.out.println("Kalimat alay angka : " + convert);
+    }
+    
+    public static void main(String[] args){
+        String identitas = "Marcel sinko octavian / XRPL3 /21";
+        
+        tampilJudul(identitas);
+        String kalimat = tampilInput();
+        String convert = vocal2Angka(kalimat);
+        tampilPerkata(kalimat, convert);
+        tampilHasil(convert);
+    }
+    }
+
+    
+        
              
 }
     
