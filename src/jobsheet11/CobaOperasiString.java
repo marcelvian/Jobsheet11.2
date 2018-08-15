@@ -47,3 +47,15 @@ System.out.println("perbandingan isi x dengan y : " + x.compareTo(y));
         System.out.println("perbandingan isi r dengan s (Case sensitive) : "
                 + r.compareTo(s));
         
+System.out.println("pada x terdapat huruf 'a' : " + x.contains("a"));
+        
+        System.out.println("isi variable x besar semua : " + x.toUpperCase());
+        System.out.println("isi variable x kecil semua : " + x.toLowerCase());
+        
+        String t = " operasi string ";
+        System.out.println("isi variable t : \""+ t +"\"");
+        System.out.println("isi variable t tanpa spasi : \""+ t.trim() +"\"");
+        
+        System.out.println("gabungkan isi variable x dan r : " + x.concat(r));
+        
+        
