@@ -1,3 +1,6 @@
+
+package jobsheet11;
+
 import java.util.Scanner;
 
 public class ConvertVocal2Angka {
@@ -7,7 +10,10 @@ public class ConvertVocal2Angka {
         
         System.out.println("\nConvert kalimat alay angka (vokal ke anka)\n");
     }
- private static String tampilInput()
+        String identitas = "Marcel sinko octavian / XRPL3 /21";
+    
+    
+    private static String tampilInput()
             {
                 Scanner scanner = new Scanner (System.in);
             
@@ -16,8 +22,8 @@ public class ConvertVocal2Angka {
             System.out.println("kalimat kali : " + kalimat);
             
             return kalimat;
-            
-             public static String vocal2Angka(String kalimat)
+            }
+    public static String vocal2Angka(String kalimat)
     {
         char[][] arConvert = 
         {{'a','4'},{'i','l'},{'u','2'},{'e','3'},{'o','0'}};
@@ -26,20 +32,21 @@ public class ConvertVocal2Angka {
         {
             kalimat = kalimat.replace(arConvert[i][0], arConvert[i][1]);       
         }
-         return kalimat; 
-         
-          private static void tampilPerkata(String kalimat, String convert)
+         return kalimat;   
+        }
+    private static void tampilPerkata(String kalimat, String convert)
     {
         String[] arrKal = kalimat.split(" ");
         String[] arrCon = convert.split(" ");
         
         for (int i = 0; i < arrCon.length; i++) {
             System.out.println(arrKal[i] + " => " + arrCon[i]);
-              }
+            
+        }
     }
     private static void tampilHasil(String convert)
     {
-        System.out.println("Kalimat alay angka : " + convert);
+        System.out.println("Klimat alay angka : " + convert);
     }
     
     public static void main(String[] args){
@@ -52,12 +59,6 @@ public class ConvertVocal2Angka {
         tampilHasil(convert);
     }
     }
-
-    
-        
-             
-}
-    
 
     
 
