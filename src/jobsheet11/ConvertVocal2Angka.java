@@ -40,4 +40,9 @@ public class ConvertVocal2Angka {
             System.out.println(arrKal[i] + " => " + arrCon[i]);
             
         }
-        
+          }
+    private static void tampilHasil(String convert)
+    {
+        System.out.println("Klimat alay angka : " + convert);
+    }
+    
