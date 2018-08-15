@@ -31,4 +31,13 @@ public class ConvertVocal2Angka {
         }
          return kalimat;   
         }
-     
+     private static void tampilPerkata(String kalimat, String convert)
+    {
+        String[] arrKal = kalimat.split(" ");
+        String[] arrCon = convert.split(" ");
+        
+        for (int i = 0; i < arrCon.length; i++) {
+            System.out.println(arrKal[i] + " => " + arrCon[i]);
+            
+        }
+        
